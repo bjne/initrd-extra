@@ -12,6 +12,8 @@ function install_bin() {
 
 	if [ -z "$DST" ]; then
 		DST="/usr/bin"
+	elif [ "$(basename $DST)" == "$DST" ]; then
+		DST="/usr/bin/$DST"
 	fi
 
 	FILE=$(basename $SRC)
