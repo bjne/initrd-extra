@@ -1,4 +1,5 @@
 clone https://github.com/CumulusNetworks/quagga
+./bootstrap.sh
 ./configure $(grep -v '^#' <<EOF|awk '{print $1}'|grep -v '^[^-][^-]'
   --prefix=/usr
   --sysconfdir=/etc/quagga
