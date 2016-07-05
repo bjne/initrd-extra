@@ -1,5 +1,5 @@
-#clone https://github.com/vincentbernat/lldpd
-#./autogen.sh
+clone https://github.com/vincentbernat/lldpd
+./autogen.sh
 ./configure $(grep -v '^#' <<EOF|awk '{print $1}'|grep -v '^[^-][^-]'
   --prefix=/usr
   --sysconfdir=/etc
