@@ -19,7 +19,7 @@ function install_bin() {
 	mkdir -p $ROOT/$DST
 	cp $1 $ROOT/$DST
 	strip $ROOT/$DST/$FILE
-	upx -9 $ROOT/$DST/$FILE
+	upx -9 --ultra-brute $ROOT/$DST/$FILE
 }
 
 function clone() {
